@@ -1,0 +1,6 @@
+--text gui nofi
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "KeySystem loaded successfully!"})
+wait(2)
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "If you dont know the key join the discord server key changes daily or when i feel like it"})
+wait(2)
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "Lol nigga code by fishaok#1151"})
