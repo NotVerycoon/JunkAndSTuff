@@ -1,0 +1,26 @@
+--CHANGE TEXT SCRIPT
+local fucktards = game.Players.LocalPlayer.PlayerGui.fishaoniggacode
+while wait() do
+	wait(4)
+	fucktards.keyfindsystems.BackGround["Nigga text"].Text = "Lol idk what nigga code means its a word i made up"
+	wait(4)
+	fucktards.keyfindsystems.BackGround["Nigga text"].Text = "Cna yuo plase jnoi ym diord"
+	wait(4)
+	fucktards.keyfindsystems.BackGround["Nigga text"].Text = "Wait why is system 32 takeing up space"
+	wait(4)
+	fucktards.keyfindsystems.BackGround["Nigga text"].Text = "#@Superwheat#9999 IS THE BEST SCRIPTER"
+	wait(4)
+	fucktards.keyfindsystems.BackGround["Nigga text"].Text = "Ping me = gay from fish ;D"
+	wait(4)
+	fucktards.keyfindsystems.BackGround["Nigga text"].Text = "#@Superwheat#9999 on top"
+	wait(4)
+	fucktards.keyfindsystems.BackGround["Nigga text"].Text = "Oh no mr poo dont touch me there"
+	wait(4)
+	fucktards.keyfindsystems.BackGround["Nigga text"].Text = "Give me robxus niggas"
+	wait(4)
+	fucktards.keyfindsystems.BackGround["Nigga text"].Text = "Bruh why is this script not working"
+	wait(0.1)
+	fucktards.keyfindsystems.BackGround["Nigga text"].Text = "Lol we logged your ip"
+	wait(0.01)
+	fucktards.keyfindsystems.BackGround["Nigga text"].Text = "Thanks for useing our script"
+end
