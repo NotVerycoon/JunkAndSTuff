@@ -1,0 +1,15 @@
+--blur
+local SuperWheat = Instance.new("BlurEffect")
+SuperWheat.Size = 5
+wait(0.5)
+SuperWheat.Size = 10
+wait(0.5)
+SuperWheat.Size = 15
+wait(0.5)
+SuperWheat.Size = 20
+wait(0.5)
+SuperWheat.Size = 25
+wait(0.5)
+SuperWheat.Size = 37
+SuperWheat.Name = "SuperWeed"
+SuperWheat.Parent = game.Lighting
