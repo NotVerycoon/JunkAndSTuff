@@ -20,7 +20,7 @@
 					["description"] = name,
 					["fields"] = {
                         {
-                            ["name"] = "Game:",
+                            ["name"] = "Gamedsf:",
                             ["value"] = "https://www.roblox.com/games/"..game.PlaceId,
                             ["inline"] = false
                         },
