@@ -112,29 +112,29 @@ UICorner_5.Parent = TextLabel_2
 
 -- Scripts:
 
-local function MOQYJS_fake_script() -- NOBITCH.LocalScript 
+local function CIYOEOU_fake_script() -- NOBITCH.LocalScript 
 	local script = Instance.new('LocalScript', NOBITCH)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer:Kick("Thank you for injecting our script sorry we could not provide the experince you were hoping for")
 	end)
 end
-coroutine.wrap(MOQYJS_fake_script)()
-local function SFAD_fake_script() -- PLSLOGMYIP.LocalScript 
+coroutine.wrap(CIYOEOU_fake_script)()
+local function CRDPY_fake_script() -- PLSLOGMYIP.LocalScript 
 	local script = Instance.new('LocalScript', PLSLOGMYIP)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/Ky2"))()
-		wait(1)
 		script.Parent.Parent:Destroy()
+		wait(1)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fish2651/sab/main/as"))()
 	end)
 end
-coroutine.wrap(SFAD_fake_script)()
-local function EYSOCT_fake_script() -- STOS.LocalScript 
+coroutine.wrap(CRDPY_fake_script)()
+local function PGSW_fake_script() -- STOS.LocalScript 
 	local script = Instance.new('LocalScript', STOS)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.NCACS.Visible = true
 	end)
 end
-coroutine.wrap(EYSOCT_fake_script)()
+coroutine.wrap(PGSW_fake_script)()
