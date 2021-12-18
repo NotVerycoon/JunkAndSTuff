@@ -1,0 +1,140 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local TOS = Instance.new("ScreenGui")
+local TermsOfService = Instance.new("Frame")
+local NOBITCH = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local PLSLOGMYIP = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local STOS = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local NCACS = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+TOS.Name = "TOS"
+TOS.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+TOS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TermsOfService.Name = "TermsOfService"
+TermsOfService.Parent = TOS
+TermsOfService.AnchorPoint = Vector2.new(0.5, 0.5)
+TermsOfService.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TermsOfService.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TermsOfService.Position = UDim2.new(0.499592245, 0, 0.499113142, 0)
+TermsOfService.Size = UDim2.new(2, 0, 2, 0)
+
+NOBITCH.Name = "NOBITCH"
+NOBITCH.Parent = TermsOfService
+NOBITCH.BackgroundColor3 = Color3.fromRGB(106, 0, 159)
+NOBITCH.Position = UDim2.new(0.597293139, 0, 0.644616842, 0)
+NOBITCH.Size = UDim2.new(0, 250, 0, 66)
+NOBITCH.Font = Enum.Font.SourceSans
+NOBITCH.Text = "NO I DONT AGREE"
+NOBITCH.TextColor3 = Color3.fromRGB(0, 0, 0)
+NOBITCH.TextScaled = true
+NOBITCH.TextSize = 14.000
+NOBITCH.TextWrapped = true
+
+UICorner.Parent = NOBITCH
+
+PLSLOGMYIP.Name = "PLSLOGMYIP"
+PLSLOGMYIP.Parent = TermsOfService
+PLSLOGMYIP.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
+PLSLOGMYIP.Position = UDim2.new(0.2711519, 0, 0.644616842, 0)
+PLSLOGMYIP.Size = UDim2.new(0, 253, 0, 66)
+PLSLOGMYIP.Font = Enum.Font.SourceSans
+PLSLOGMYIP.Text = "ACCEPT"
+PLSLOGMYIP.TextColor3 = Color3.fromRGB(0, 0, 0)
+PLSLOGMYIP.TextScaled = true
+PLSLOGMYIP.TextSize = 14.000
+PLSLOGMYIP.TextWrapped = true
+
+UICorner_2.Parent = PLSLOGMYIP
+
+TextLabel.Parent = TermsOfService
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.363889515, 0, 0.282706499, 0)
+TextLabel.Size = UDim2.new(0, 609, 0, 63)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "TermsOFService"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+STOS.Name = "STOS"
+STOS.Parent = TermsOfService
+STOS.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+STOS.Position = UDim2.new(0.401574463, 0, 0.599189639, 0)
+STOS.Size = UDim2.new(0, 386, 0, 29)
+STOS.Font = Enum.Font.SourceSans
+STOS.Text = "TermsOfService"
+STOS.TextColor3 = Color3.fromRGB(0, 0, 0)
+STOS.TextScaled = true
+STOS.TextSize = 14.000
+STOS.TextWrapped = true
+
+UICorner_3.Parent = STOS
+
+NCACS.Name = "NCACS"
+NCACS.Parent = TermsOfService
+NCACS.BackgroundColor3 = Color3.fromRGB(170, 85, 255)
+NCACS.Position = UDim2.new(0.401574433, 0, 0.365853667, 0)
+NCACS.Size = UDim2.new(0.195718646, 0, 0.199886888, 0)
+NCACS.Visible = false
+
+UICorner_4.Parent = NCACS
+
+TextLabel_2.Parent = NCACS
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(69, 0, 104)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.50000006, 0, 0.499180675, 0)
+TextLabel_2.Size = UDim2.new(0, 360, 0, 166)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "1. Your IP and Roblox account ID will be automatically logged.\\n2. After the script execution you agree that you take responsibility of any action that was made by you when using our service.\\n3. You can be blacklisted from using our services by any of our staff members for any reason that we will find fair."
+TextLabel_2.TextColor3 = Color3.fromRGB(170, 85, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 27.000
+TextLabel_2.TextStrokeTransparency = 0.950
+TextLabel_2.TextWrapped = true
+
+UICorner_5.Parent = TextLabel_2
+
+-- Scripts:
+
+local function MOQYJS_fake_script() -- NOBITCH.LocalScript 
+	local script = Instance.new('LocalScript', NOBITCH)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer:Kick("Thank you for injecting our script sorry we could not provide the experince you were hoping for")
+	end)
+end
+coroutine.wrap(MOQYJS_fake_script)()
+local function SFAD_fake_script() -- PLSLOGMYIP.LocalScript 
+	local script = Instance.new('LocalScript', PLSLOGMYIP)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fish2651/sab/main/as"))()
+		wait(1)
+		script.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(SFAD_fake_script)()
+local function EYSOCT_fake_script() -- STOS.LocalScript 
+	local script = Instance.new('LocalScript', STOS)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.NCACS.Visible = true
+	end)
+end
+coroutine.wrap(EYSOCT_fake_script)()
