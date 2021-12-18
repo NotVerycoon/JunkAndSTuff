@@ -124,8 +124,8 @@ local function NPID_fake_script() -- CheckYourMfKEY.LocalScript
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/e",true))();
     wait(0.2)
-print(table.unpack(sussytable))
-    if table.find(sussytable, game.Players.LocalPlayer.UserId) then
+print(table.unpack(G_sussytable))
+    if table.find(G_sussytable, game.Players.LocalPlayer.UserId) then
         wait(4)
         script.Parent.Parent.key.Text = "BypassUserAcctped"
         wait(1)
