@@ -136,7 +136,6 @@ else
     end
 end
 
-local function JMWWL_fake_script() -- Disocrd.DiscordLink 
 	local script = Instance.new('LocalScript', Disocrd)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -144,8 +143,6 @@ local function JMWWL_fake_script() -- Disocrd.DiscordLink
 		toclipboard("https://discord.gg/ja5g4ym7WB")
 		print"Copied"
 	end)
-end
-coroutine.wrap(JMWWL_fake_script)()
 local function EZDNAOF_fake_script() -- keyfindsystems.Dragify 
 	local script = Instance.new('LocalScript', keyfindsystems)
 
@@ -195,13 +192,11 @@ local function BSRFG_fake_script() -- fishaoniggacode.Text
 	print"loaded text"
 end
 coroutine.wrap(BSRFG_fake_script)()
-local function CIWUSEF_fake_script() -- fishaoniggacode.CoolBlurr 
 	local script = Instance.new('LocalScript', fishaoniggacode)
 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/blurr"))()
 	print"COOL BLURR LOADED"
-end
-coroutine.wrap(CIWUSEF_fake_script)()
+
 local function OHWD_fake_script() -- fishaoniggacode.ChangeText 
 	local script = Instance.new('LocalScript', fishaoniggacode)
 
