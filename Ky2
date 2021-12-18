@@ -6,7 +6,7 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/e",true))();
     wait(0.2)
 if table.find(G_sussytable, game.Players.LocalPlayer.UserId) then
-    loadstring(game:HttpGet("https://pastebin.com/raw/u1eQsvfn",true))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub",true))();
 else
     local fishaok1151niggacode = Instance.new("ScreenGui")
     local keyfindsystems = Instance.new("Frame")
@@ -119,7 +119,7 @@ else
     			print"we loaded the gui you wanted master"
     			game.Lighting.SuperWeed:Destroy()
     			game.Workspace.BadassMusic:Destroy()
-    			loadstring(game:HttpGet("https://pastebin.com/raw/u1eQsvfn",true))();
+    			loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub",true))();
     			wait(5)
     			script.Parent.Parent:Destroy() -- Destroys the GUI after a set time
     	
