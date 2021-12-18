@@ -3,175 +3,146 @@
 
 -- Instances:
 
-local fishaoniggacode = Instance.new("ScreenGui")
-local keyfindsystems = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local BackGround = Instance.new("ImageLabel")
-local UICorner_2 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
-local CheckYourMfKEY = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local key = Instance.new("TextBox")
-local UICorner_4 = Instance.new("UICorner")
-local Disocrd = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local Niggatext = Instance.new("TextLabel")
-
---Properties:
-
-fishaoniggacode.Name = "fishaoniggacode"
-fishaoniggacode.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-fishaoniggacode.Enabled = false
-fishaoniggacode.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-keyfindsystems.Name = "keyfindsystems"
-keyfindsystems.Parent = fishaoniggacode
-keyfindsystems.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-keyfindsystems.BackgroundTransparency = 1.000
-keyfindsystems.Position = UDim2.new(0.179519519, 0, 0.141176477, 0)
-keyfindsystems.Size = UDim2.new(0, 425, 0, 250)
-
-UICorner.Parent = keyfindsystems
-
-BackGround.Name = "BackGround"
-BackGround.Parent = keyfindsystems
-BackGround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BackGround.BackgroundTransparency = 1.000
-BackGround.Position = UDim2.new(-0.00154641538, 0, -0.0015823975, 0)
-BackGround.Size = UDim2.new(0, 425, 0, 250)
-BackGround.Image = "http://www.roblox.com/asset/?id=2741284587"
-BackGround.ImageColor3 = Color3.fromRGB(170, 0, 255)
-BackGround.ImageTransparency = 0.200
-
-UICorner_2.Parent = BackGround
-
-TextLabel.Parent = BackGround
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextLabel.Position = UDim2.new(0.122181758, 0, 0.0759999976, 0)
-TextLabel.Size = UDim2.new(0, 324, 0, 28)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "KeyCheckShit!"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 48.000
-TextLabel.TextTransparency = 0.300
-TextLabel.TextWrapped = true
-
-CheckYourMfKEY.Name = "CheckYourMfKEY"
-CheckYourMfKEY.Parent = BackGround
-CheckYourMfKEY.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-CheckYourMfKEY.BackgroundTransparency = 0.300
-CheckYourMfKEY.Position = UDim2.new(0.207058817, 0, 0.663999975, 0)
-CheckYourMfKEY.Size = UDim2.new(0, 250, 0, 54)
-CheckYourMfKEY.Font = Enum.Font.SourceSans
-CheckYourMfKEY.Text = "Check Key!"
-CheckYourMfKEY.TextColor3 = Color3.fromRGB(170, 85, 255)
-CheckYourMfKEY.TextScaled = true
-CheckYourMfKEY.TextSize = 14.000
-CheckYourMfKEY.TextWrapped = true
-
-UICorner_3.Parent = CheckYourMfKEY
-
-key.Name = "key"
-key.Parent = BackGround
-key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-key.BackgroundTransparency = 0.300
-key.BorderSizePixel = 0
-key.Position = UDim2.new(0.122181788, 0, 0.392872751, 0)
-key.Size = UDim2.new(0, 326, 0, 24)
-key.Font = Enum.Font.Merriweather
-key.Text = ""
-key.TextColor3 = Color3.fromRGB(0, 85, 255)
-key.TextScaled = true
-key.TextSize = 14.000
-key.TextWrapped = true
-
-UICorner_4.Parent = key
-
-Disocrd.Name = "Disocrd"
-Disocrd.Parent = BackGround
-Disocrd.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-Disocrd.BackgroundTransparency = 0.300
-Disocrd.BorderSizePixel = 0
-Disocrd.Position = UDim2.new(0.204705879, 0, 0.523999989, 0)
-Disocrd.Size = UDim2.new(0, 250, 0, 22)
-Disocrd.Font = Enum.Font.SourceSans
-Disocrd.Text = "CopyDiscordLink!"
-Disocrd.TextColor3 = Color3.fromRGB(170, 85, 255)
-Disocrd.TextSize = 30.000
-Disocrd.TextWrapped = true
-
-UICorner_5.Parent = Disocrd
-
-Niggatext.Name = "Nigga text"
-Niggatext.Parent = BackGround
-Niggatext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Niggatext.BackgroundTransparency = 1.000
-Niggatext.Position = UDim2.new(0.207058817, 0, 0.879999995, 0)
-Niggatext.Size = UDim2.new(0, 237, 0, 30)
-Niggatext.Font = Enum.Font.PermanentMarker
-Niggatext.Text = "LOL"
-Niggatext.TextColor3 = Color3.fromRGB(255, 255, 255)
-Niggatext.TextScaled = true
-Niggatext.TextSize = 14.000
-Niggatext.TextWrapped = true
-
--- Scripts:
-
-local function NPID_fake_script() -- CheckYourMfKEY.LocalScript 
-	local script = Instance.new('LocalScript', CheckYourMfKEY)
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/e",true))();
     wait(0.2)
-print(table.unpack(G_sussytable))
-    if table.find(G_sussytable, game.Players.LocalPlayer.UserId) then
-        wait(4)
-        script.Parent.Parent.key.Text = "BypassUserAcctped"
-        wait(1)
-        script.Parent.Parent:TweenPosition(UDim2.new(0.583,0,-1.9,0), "Out", "Quad", 1, true)
-        wait(0.2)
-        print"we loaded the gui you wanted master"
-        wait(0.2)
-        game.Lighting.SuperWeed:Destroy()
-        wait(0.2)
-        game.Workspace.BadassMusic:Destroy()
-        wait(0.2)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/LinkToHub",true))();
-        wait(0.2)
-        script.Parent.Parent:Destroy()
+if table.find(G_sussytable, game.Players.LocalPlayer.UserId) then
+    loadstring(game:HttpGet("https://pastebin.com/raw/u1eQsvfn",true))();
+else
+    local fishaok1151niggacode = Instance.new("ScreenGui")
+    local keyfindsystems = Instance.new("Frame")
+    local UICorner = Instance.new("UICorner")
+    local BackGround = Instance.new("ImageLabel")
+    local UICorner_2 = Instance.new("UICorner")
+    local TextLabel = Instance.new("TextLabel")
+    local CheckYourMfKEY = Instance.new("TextButton")
+    local UICorner_3 = Instance.new("UICorner")
+    local key = Instance.new("TextBox")
+    local UICorner_4 = Instance.new("UICorner")
+    local Disocrd = Instance.new("TextButton")
+    local UICorner_5 = Instance.new("UICorner")
+    
+    --Properties:
+    
+    fishaok1151niggacode.Name = "fishaok#1151niggacode"
+    fishaok1151niggacode.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    fishaok1151niggacode.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    
+    keyfindsystems.Name = "keyfindsystems"
+    keyfindsystems.Parent = fishaok1151niggacode
+    keyfindsystems.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+    keyfindsystems.BackgroundTransparency = 1.000
+    keyfindsystems.Position = UDim2.new(0.179519519, 0, 0.141176477, 0)
+    keyfindsystems.Size = UDim2.new(0, 425, 0, 250)
+    
+    UICorner.Parent = keyfindsystems
+    
+    BackGround.Name = "BackGround"
+    BackGround.Parent = keyfindsystems
+    BackGround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    BackGround.BackgroundTransparency = 1.000
+    BackGround.Position = UDim2.new(-0.00154641538, 0, -0.0015823975, 0)
+    BackGround.Size = UDim2.new(0, 425, 0, 250)
+    BackGround.Image = "http://www.roblox.com/asset/?id=2741284587"
+    BackGround.ImageColor3 = Color3.fromRGB(170, 0, 255)
+    BackGround.ImageTransparency = 0.200
+    
+    UICorner_2.Parent = BackGround
+    
+    TextLabel.Parent = BackGround
+    TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.BackgroundTransparency = 1.000
+    TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+    TextLabel.Position = UDim2.new(0.122181758, 0, 0.0759999976, 0)
+    TextLabel.Size = UDim2.new(0, 324, 0, 28)
+    TextLabel.Font = Enum.Font.SourceSans
+    TextLabel.Text = "KeyCheckShit!"
+    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.TextSize = 48.000
+    TextLabel.TextTransparency = 0.300
+    TextLabel.TextWrapped = true
+    
+    CheckYourMfKEY.Name = "CheckYourMfKEY"
+    CheckYourMfKEY.Parent = BackGround
+    CheckYourMfKEY.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+    CheckYourMfKEY.BackgroundTransparency = 0.300
+    CheckYourMfKEY.Position = UDim2.new(0.207058817, 0, 0.663999975, 0)
+    CheckYourMfKEY.Size = UDim2.new(0, 250, 0, 54)
+    CheckYourMfKEY.Font = Enum.Font.SourceSans
+    CheckYourMfKEY.Text = "Check Key!"
+    CheckYourMfKEY.TextColor3 = Color3.fromRGB(170, 85, 255)
+    CheckYourMfKEY.TextScaled = true
+    CheckYourMfKEY.TextSize = 14.000
+    CheckYourMfKEY.TextWrapped = true
+    
+    UICorner_3.Parent = CheckYourMfKEY
+    
+    key.Name = "key"
+    key.Parent = BackGround
+    key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    key.BackgroundTransparency = 0.300
+    key.BorderSizePixel = 0
+    key.Position = UDim2.new(0.122181788, 0, 0.392872751, 0)
+    key.Size = UDim2.new(0, 326, 0, 24)
+    key.Font = Enum.Font.Merriweather
+    key.Text = "EnterKeyHere!!!"
+    key.TextColor3 = Color3.fromRGB(0, 85, 255)
+    key.TextScaled = true
+    key.TextSize = 14.000
+    key.TextWrapped = true
+    
+    UICorner_4.Parent = key
+    
+    Disocrd.Name = "Disocrd"
+    Disocrd.Parent = BackGround
+    Disocrd.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+    Disocrd.BackgroundTransparency = 0.300
+    Disocrd.BorderSizePixel = 0
+    Disocrd.Position = UDim2.new(0.204705879, 0, 0.523999989, 0)
+    Disocrd.Size = UDim2.new(0, 250, 0, 22)
+    Disocrd.Font = Enum.Font.SourceSans
+    Disocrd.Text = "CopyDiscordLink!"
+    Disocrd.TextColor3 = Color3.fromRGB(170, 85, 255)
+    Disocrd.TextSize = 30.000
+    Disocrd.TextWrapped = true
+    
+    UICorner_5.Parent = Disocrd
+    
+    -- Scripts:
+    
+    local function ZKBTT_fake_script() -- CheckYourMfKEY.KeySystem 
+    	local script = Instance.new('LocalScript', CheckYourMfKEY)
+    	local key = script.Parent.Parent.key
+    	
+    	script.Parent.MouseButton1Click:Connect(function()
+    		if key.Text == tostring(game:HttpGet("https://pastebin.com/raw/XXM0dDgP")) then
+    			script.Parent.Parent:TweenPosition(UDim2.new(0.583,0,-1.9,0), "Out", "Quad", 1, true)
+    			print"we loaded the gui you wanted master"
+    			game.Lighting.SuperWeed:Destroy()
+    			game.Workspace.BadassMusic:Destroy()
+    			loadstring(game:HttpGet("https://pastebin.com/raw/u1eQsvfn",true))();
+    			wait(5)
+    			script.Parent.Parent:Destroy() -- Destroys the GUI after a set time
+    	
+    		elseif -- Tweening | If you want it to do a different tween just change the "Quad" to another tween animation
+    			key.Text == "" then
+    			key.Text = "" else
+    			key.Text = "Incorrect, try again."
+    			wait(2)
+    			game.Players.LocalPlayer:Kick("Join discord to get key!")
+    			wait(1)
+    			key.Text = ""
+    		end
+    	end)
     end
-    local key = script.Parent.Parent.key
-    
-    script.Parent.MouseButton1Click:Connect(function()
-        if key.Text == "SuperWheatIsTheBestScripter" then -- Make the "Key" whatever you wish.
-            script.Parent.Parent:TweenPosition(UDim2.new(0.583,0,-1.9,0), "Out", "Quad", 1, true)
-            print"we loaded the gui you wanted master"
-            game.Lighting.SuperWeed:Destroy()
-            game.Workspace.BadassMusic:Destroy()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/LinkToHub",true))();
-            wait(5)
-            script.Parent.Parent:Destroy() -- Destroys the GUI after a set time
-    
-        elseif -- Tweening | If you want it to do a different tween just change the "Quad" to another tween animation
-            key.Text == "" then
-            key.Text = "" else
-            key.Text = "Incorrect, try again."
-            wait(2)
-            game.Players.LocalPlayer:Kick("Join discord to get key!")
-            wait(1)
-            key.Text = ""
-        end
-    end)
 end
-coroutine.wrap(NPID_fake_script)()
+
 local function JMWWL_fake_script() -- Disocrd.DiscordLink 
 	local script = Instance.new('LocalScript', Disocrd)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard("https://discord.gg/ja5g4ym7WB")
 		toclipboard("https://discord.gg/ja5g4ym7WB")
-		print"copyed"
+		print"Copied"
 	end)
 end
 coroutine.wrap(JMWWL_fake_script)()
