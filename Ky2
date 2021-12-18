@@ -133,7 +133,7 @@ local function SLOPAE_fake_script() -- CheckYourMfKEY.LocalScript
 		wait(0.2)
 		game.Workspace.BadassMusic:Destroy()
 		wait(0.2)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/LinkToHub",true))();
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub",true))();
 		wait(0.2)
 		script.Parent.Parent:Destroy()
 	end
