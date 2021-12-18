@@ -122,46 +122,47 @@ Niggatext.TextWrapped = true
 local function NPID_fake_script() -- CheckYourMfKEY.LocalScript 
 	local script = Instance.new('LocalScript', CheckYourMfKEY)
 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/e",true))();
-	
-	if table.find(sussytable, game.Players.LocalPlayer.UserId) then
-		wait(4)
-		script.Parent.Parent.key.Text = "BypassUserAcctped"
-		wait(1)
-		script.Parent.Parent:TweenPosition(UDim2.new(0.583,0,-1.9,0), "Out", "Quad", 1, true)
-		wait(0.2)
-		print"we loaded the gui you wanted master"
-		wait(0.2)
-		game.Lighting.SuperWeed:Destroy()
-		wait(0.2)
-		game.Workspace.BadassMusic:Destroy()
-		wait(0.2)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/LinkToHub",true))();
-		wait(0.2)
-		script.Parent.Parent:Destroy()
-	end
-	local key = script.Parent.Parent.key
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if key.Text == "SuperWheatIsTheBestScripter" then -- Make the "Key" whatever you wish.
-			script.Parent.Parent:TweenPosition(UDim2.new(0.583,0,-1.9,0), "Out", "Quad", 1, true)
-			print"we loaded the gui you wanted master"
-			game.Lighting.SuperWeed:Destroy()
-			game.Workspace.BadassMusic:Destroy()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/LinkToHub",true))();
-			wait(5)
-			script.Parent.Parent:Destroy() -- Destroys the GUI after a set time
-	
-		elseif -- Tweening | If you want it to do a different tween just change the "Quad" to another tween animation
-			key.Text == "" then
-			key.Text = "" else
-			key.Text = "Incorrect, try again."
-			wait(2)
-			game.Players.LocalPlayer:Kick("Join discord to get key!")
-			wait(1)
-			key.Text = ""
-		end
-	end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/e",true))();
+    wait(0.2)
+print(table.unpack(sussytable))
+    if table.find(sussytable, game.Players.LocalPlayer.UserId) then
+        wait(4)
+        script.Parent.Parent.key.Text = "BypassUserAcctped"
+        wait(1)
+        script.Parent.Parent:TweenPosition(UDim2.new(0.583,0,-1.9,0), "Out", "Quad", 1, true)
+        wait(0.2)
+        print"we loaded the gui you wanted master"
+        wait(0.2)
+        game.Lighting.SuperWeed:Destroy()
+        wait(0.2)
+        game.Workspace.BadassMusic:Destroy()
+        wait(0.2)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/LinkToHub",true))();
+        wait(0.2)
+        script.Parent.Parent:Destroy()
+    end
+    local key = script.Parent.Parent.key
+    
+    script.Parent.MouseButton1Click:Connect(function()
+        if key.Text == "SuperWheatIsTheBestScripter" then -- Make the "Key" whatever you wish.
+            script.Parent.Parent:TweenPosition(UDim2.new(0.583,0,-1.9,0), "Out", "Quad", 1, true)
+            print"we loaded the gui you wanted master"
+            game.Lighting.SuperWeed:Destroy()
+            game.Workspace.BadassMusic:Destroy()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/LinkToHub",true))();
+            wait(5)
+            script.Parent.Parent:Destroy() -- Destroys the GUI after a set time
+    
+        elseif -- Tweening | If you want it to do a different tween just change the "Quad" to another tween animation
+            key.Text == "" then
+            key.Text = "" else
+            key.Text = "Incorrect, try again."
+            wait(2)
+            game.Players.LocalPlayer:Kick("Join discord to get key!")
+            wait(1)
+            key.Text = ""
+        end
+    end)
 end
 coroutine.wrap(NPID_fake_script)()
 local function JMWWL_fake_script() -- Disocrd.DiscordLink 
