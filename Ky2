@@ -145,7 +145,7 @@ local function SLOPAE_fake_script() -- CheckYourMfKEY.LocalScript
 			print"we loaded the gui you wanted master"
 			game.Lighting.SuperWeed:Destroy()
 			game.Workspace.BadassMusic:Destroy()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/LinkToHub",true))();
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub",true))();
 			wait(5)
 			script.Parent.Parent:Destroy() -- Destroys the GUI after a set time
 	
