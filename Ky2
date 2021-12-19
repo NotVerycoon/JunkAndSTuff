@@ -6,7 +6,7 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/e",true))();
     wait(0.2)
 if table.find(G_sussytable, game.Players.LocalPlayer.UserId) then
-    loadstring(game:HttpGet("https://pastebin.com/raw/u1eQsvfn",true))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub",true))();
 else
     local MainGui = Instance.new("ScreenGui")
     local keyfindsystems = Instance.new("Frame")
@@ -146,7 +146,7 @@ else
     		     game.Lighting.SuperWeed:Destroy()
     		end
     		game.Workspace.BadassMusic:Destroy()
-    		loadstring(game:HttpGet("https://pastebin.com/raw/u1eQsvfn",true))();
+    		loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub",true))();
     		wait(5)
     		MainGui:Destroy()
     	else
