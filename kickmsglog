@@ -1,3 +1,4 @@
+    local webh = game:HttpGet("https://pastebin.com/raw/CMxbwGAc")
     local Hook;
     
     local function sendlog(message)
