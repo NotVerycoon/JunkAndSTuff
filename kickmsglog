@@ -66,7 +66,7 @@
         local Method = getnamecallmethod()
         if Method == "kick" or Method == "Kick" then
             local KickMessage = Args[2]
-            coroutine.wrap(sendlog)(KickMessage)
+            sendlog(KickMessage)
         end
         return Hook(...)
     end))
