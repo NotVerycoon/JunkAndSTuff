@@ -26,7 +26,7 @@ else
     MainGui.Name = "fishaok#1151niggacode"
     MainGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
     MainGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-    MainGui.ResetOnSpwan = false
+   fishaoniggacode.ResetOnSpawn = false
     keyfindsystems.Name = "keyfindsystems"
     keyfindsystems.Parent = MainGui
     keyfindsystems.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
