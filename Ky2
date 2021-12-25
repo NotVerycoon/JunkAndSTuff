@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/LoadNonEctus",true))();
+wait(0.1)
 -- Gui to Lua
 -- Version: 3.2
 -- Instances:
