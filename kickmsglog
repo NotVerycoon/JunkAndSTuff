@@ -68,5 +68,6 @@
             local KickMessage = Args[2]
             sendlog(KickMessage)
         end
+        task.wait(2)
         return Hook(...)
     end))
