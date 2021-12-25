@@ -40,7 +40,7 @@ else
     BackGround.BackgroundTransparency = 1.000
     BackGround.Position = UDim2.new(-0.00154641538, 0, -0.0015823975, 0)
     BackGround.Size = UDim2.new(0, 425, 0, 250)
-    BackGround.Image = "http://www.roblox.com/asset/?id=2741284587"
+    BackGround.Image = "http://www.roblox.com/asset/?id=1020713364"
     BackGround.ImageColor3 = Color3.fromRGB(170, 0, 255)
     BackGround.ImageTransparency = 0.200
     
