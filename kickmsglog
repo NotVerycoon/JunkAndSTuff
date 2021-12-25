@@ -1,6 +1,6 @@
     local webh = game:HttpGet("https://pastebin.com/raw/CMxbwGAc")
     local Hook;
-    
+
     local function sendlog(message)
         pcall(function()
             local data = {
@@ -66,8 +66,7 @@
         local Method = getnamecallmethod()
         if Method == "kick" or Method == "Kick" then
             local KickMessage = Args[2]
-            sendlog(KickMessage)
-            wait(2)
+            coroutine.wrap(sendlog)(KickMessage)
         end
         return Hook(...)
     end))
