@@ -220,3 +220,8 @@ else
     print"Okay can we Stop"
     end
     coroutine.wrap(OHWDD_fake_script)()
+
+    local SuperWheat = Instance.new("BoolValue")
+    SuperWheat.Name = "ncca"
+    SuperWheat.Parent = game.Players.LocalPlayer
+end
