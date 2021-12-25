@@ -111,14 +111,6 @@ else
     	print"COOL BLURR LOADED"
     end
     
-    coroutine.wrap(gayblur)()
-    
-    local function OHWD_fake_script() -- fishaoniggacode.ChangeText
-    
-    	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/ChangeText"))()
-    	print"Loaded change text"
-    end
-    
     coroutine.wrap(OHWD_fake_script)()
     
     local function music()
