@@ -88,7 +88,7 @@ key.BorderSizePixel = 0
 key.Position = UDim2.new(0.122181788, 0, 0.392872751, 0)
 key.Size = UDim2.new(0, 326, 0, 24)
 key.Font = Enum.Font.Merriweather
-key.Text = ""
+key.Text = "EnterKeyHere!!!"
 key.TextColor3 = Color3.fromRGB(0, 85, 255)
 key.TextScaled = true
 key.TextSize = 14.000
@@ -126,7 +126,7 @@ Niggatext.TextWrapped = true
 
 -- Scripts:
 
-local function GKJOXEH_fake_script() -- CheckYourMfKEY.LocalScript 
+local function VRSZ_fake_script() -- CheckYourMfKEY.LocalScript 
 	local script = Instance.new('LocalScript', CheckYourMfKEY)
 
 	if key.Text == tostring(game:HttpGet("https://pastebin.com/raw/XXM0dDgP")) then
@@ -150,8 +150,8 @@ local function GKJOXEH_fake_script() -- CheckYourMfKEY.LocalScript
 		key.Text = ""
 	end
 end
-coroutine.wrap(GKJOXEH_fake_script)()
-local function LAQPJK_fake_script() -- Disocrd.DiscordLink 
+coroutine.wrap(VRSZ_fake_script)()
+local function XIQSGW_fake_script() -- Disocrd.DiscordLink 
 	local script = Instance.new('LocalScript', Disocrd)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -160,8 +160,8 @@ local function LAQPJK_fake_script() -- Disocrd.DiscordLink
 		toclipboard("https://discord.gg/ja5g4ym7WB")
 	end)
 end
-coroutine.wrap(LAQPJK_fake_script)()
-local function FTZE_fake_script() -- keyfindsystems.Dragify 
+coroutine.wrap(XIQSGW_fake_script)()
+local function CNYE_fake_script() -- keyfindsystems.Dragify 
 	local script = Instance.new('LocalScript', keyfindsystems)
 
 	local UIS = game:GetService("UserInputService")
@@ -202,54 +202,53 @@ local function FTZE_fake_script() -- keyfindsystems.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(FTZE_fake_script)()
-local function CMQSQ_fake_script() -- fishaoniggacode.Text 
+coroutine.wrap(CNYE_fake_script)()
+local function VXWBK_fake_script() -- fishaoniggacode.Text 
 	local script = Instance.new('LocalScript', fishaoniggacode)
 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/TextNotfi"))()
 	print"loaded text"
 end
-coroutine.wrap(CMQSQ_fake_script)()
-local function SCELWBT_fake_script() -- fishaoniggacode.CoolBlurr 
+coroutine.wrap(VXWBK_fake_script)()
+local function CKBEBW_fake_script() -- fishaoniggacode.CoolBlurr 
 	local script = Instance.new('LocalScript', fishaoniggacode)
 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/blurr"))()
 	print"COOL BLURR LOADED"
 end
-coroutine.wrap(SCELWBT_fake_script)()
-local function VOHK_fake_script() -- fishaoniggacode.ChangeText 
+coroutine.wrap(CKBEBW_fake_script)()
+local function SATJR_fake_script() -- fishaoniggacode.ChangeText 
 	local script = Instance.new('LocalScript', fishaoniggacode)
 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/ChangeText"))()
 	print"Loaded change text"
 end
-coroutine.wrap(VOHK_fake_script)()
-local function XIXX_fake_script() -- fishaoniggacode.BadAssMusic 
+coroutine.wrap(SATJR_fake_script)()
+local function JKXZAOD_fake_script() -- fishaoniggacode.BadAssMusic 
 	local script = Instance.new('LocalScript', fishaoniggacode)
 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/coolMusic"))()
 	print"LOADED MUSIC"
 end
-coroutine.wrap(XIXX_fake_script)()
-local function UNCZU_fake_script() -- fishaoniggacode.nolonger use 
+coroutine.wrap(JKXZAOD_fake_script)()
+local function QASQ_fake_script() -- fishaoniggacode.nolonger use 
 	local script = Instance.new('LocalScript', fishaoniggacode)
 
 	print"L O L J J S P L O IT "
 end
-coroutine.wrap(UNCZU_fake_script)()
-local function PDCZND_fake_script() -- fishaoniggacode.Later usde check 
+coroutine.wrap(QASQ_fake_script)()
+local function UOPSXD_fake_script() -- fishaoniggacode.Later usde check 
 	local script = Instance.new('LocalScript', fishaoniggacode)
 
 	local SuperWheat = Instance.new("BoolValue")
 	SuperWheat.Name = "ncca"
 	SuperWheat.Parent = game.Players.LocalPlayer
 end
-coroutine.wrap(PDCZND_fake_script)()
-local function CSFWM_fake_script() -- fishaoniggacode.VersionCheck 
+coroutine.wrap(UOPSXD_fake_script)()
+local function NVLJH_fake_script() -- fishaoniggacode.VersionCheck 
 	local script = Instance.new('LocalScript', fishaoniggacode)
 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/Version"))()
 	print"VersionID Loaded"
 end
-coroutine.wrap(CSFWM_fake_script)()
-
+coroutine.wrap(NVLJH_fake_script)()
