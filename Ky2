@@ -137,7 +137,7 @@ local function VRSZ_fake_script() -- CheckYourMfKEY.LocalScript
 		key.Text = ""
 		key.Text = "Incorrect, try again."
 		wait(2)
-		game:GetService("Players").LocalPlayer:Kick("Join discord to get key, link was copied to your clipboard!")
+		game.Players.LocalPlayer:Kick("Join discord to get key, link was copied to your clipboard!")
 		setclipboard("https://discord.gg/ja5g4ym7WB")
 		wait(1)
 		key.Text = ""
