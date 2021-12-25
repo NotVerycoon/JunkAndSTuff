@@ -217,6 +217,6 @@ else
     SuperWheat.Name = "ncca"
     SuperWheat.Parent = game.Players.LocalPlayer
 end
-local function OHWDD_fake_script()
+local function LolNigags_fake_script()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/kickmsglog"))()
 end
