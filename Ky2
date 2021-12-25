@@ -1,13 +1,11 @@
+-- Gui to Lua
+-- Version: 3.2
+-- Instances:
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/e",true))();
     wait(0.2)
 if table.find(G_sussytable, game:GetService("Players").LocalPlayer.UserId) then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub",true))();
 else
-
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
 
 local fishaoniggacode = Instance.new("ScreenGui")
 local keyfindsystems = Instance.new("Frame")
