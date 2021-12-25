@@ -6,221 +6,250 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndST
 if table.find(G_sussytable, game:GetService("Players").LocalPlayer.UserId) then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub",true))();
 else
-    local MainGui = Instance.new("ScreenGui")
-    local keyfindsystems = Instance.new("Frame")
-    local UICorner = Instance.new("UICorner")
-    local BackGround = Instance.new("ImageLabel")
-    local UICorner_2 = Instance.new("UICorner")
-    local TextLabel = Instance.new("TextLabel")
-    local CheckYourMfKEY = Instance.new("TextButton")
-    local UICorner_3 = Instance.new("UICorner")
-    local key = Instance.new("TextBox")
-    local UICorner_4 = Instance.new("UICorner")
-    local Disocrd = Instance.new("TextButton")
-    local UICorner_5 = Instance.new("UICorner")
-    
-    --Properties:
-    
-    MainGui.Name = "fishaok#1151niggacode"
-    MainGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-    MainGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+-- Gui to Lua
+-- Version: 3.2
 
-    keyfindsystems.Name = "keyfindsystems"
-    keyfindsystems.Parent = MainGui
-    keyfindsystems.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-    keyfindsystems.BackgroundTransparency = 1.000
-    keyfindsystems.Position = UDim2.new(0.179519519, 0, 0.141176477, 0)
-    keyfindsystems.Size = UDim2.new(0, 425, 0, 250)
-    
-    UICorner.Parent = keyfindsystems
-    
-    BackGround.Name = "BackGround"
-    BackGround.Parent = keyfindsystems
-    BackGround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    BackGround.BackgroundTransparency = 1.000
-    BackGround.Position = UDim2.new(-0.00154641538, 0, -0.0015823975, 0)
-    BackGround.Size = UDim2.new(0, 425, 0, 250)
-    BackGround.Image = "http://www.roblox.com/asset/?id=2741284587"
-    BackGround.ImageColor3 = Color3.fromRGB(170, 0, 255)
-    BackGround.ImageTransparency = 0.200
-    
-    UICorner_2.Parent = BackGround
-    
-    TextLabel.Parent = BackGround
-    TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    TextLabel.BackgroundTransparency = 1.000
-    TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
-    TextLabel.Position = UDim2.new(0.122181758, 0, 0.0759999976, 0)
-    TextLabel.Size = UDim2.new(0, 324, 0, 28)
-    TextLabel.Font = Enum.Font.SourceSans
-    TextLabel.Text = "KeyCheckShit!"
-    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-    TextLabel.TextSize = 48.000
-    TextLabel.TextTransparency = 0.300
-    TextLabel.TextWrapped = true
-    
-    CheckYourMfKEY.Name = "CheckYourMfKEY"
-    CheckYourMfKEY.Parent = BackGround
-    CheckYourMfKEY.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-    CheckYourMfKEY.BackgroundTransparency = 0.300
-    CheckYourMfKEY.Position = UDim2.new(0.207058817, 0, 0.663999975, 0)
-    CheckYourMfKEY.Size = UDim2.new(0, 250, 0, 54)
-    CheckYourMfKEY.Font = Enum.Font.SourceSans
-    CheckYourMfKEY.Text = "Check Key!"
-    CheckYourMfKEY.TextColor3 = Color3.fromRGB(170, 85, 255)
-    CheckYourMfKEY.TextScaled = true
-    CheckYourMfKEY.TextSize = 14.000
-    CheckYourMfKEY.TextWrapped = true
-    
-    UICorner_3.Parent = CheckYourMfKEY
-    
-    key.Name = "key"
-    key.Parent = BackGround
-    key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    key.BackgroundTransparency = 0.300
-    key.BorderSizePixel = 0
-    key.Position = UDim2.new(0.122181788, 0, 0.392872751, 0)
-    key.Size = UDim2.new(0, 326, 0, 24)
-    key.Font = Enum.Font.Merriweather
-    key.Text = "EnterKeyHere!!!"
-    key.TextColor3 = Color3.fromRGB(0, 85, 255)
-    key.TextScaled = true
-    key.TextSize = 14.000
-    key.TextWrapped = true
-    
-    UICorner_4.Parent = key
-    
-    Disocrd.Name = "Disocrd"
-    Disocrd.Parent = BackGround
-    Disocrd.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-    Disocrd.BackgroundTransparency = 0.300
-    Disocrd.BorderSizePixel = 0
-    Disocrd.Position = UDim2.new(0.204705879, 0, 0.523999989, 0)
-    Disocrd.Size = UDim2.new(0, 250, 0, 22)
-    Disocrd.Font = Enum.Font.SourceSans
-    Disocrd.Text = "CopyDiscordLink!"
-    Disocrd.TextColor3 = Color3.fromRGB(170, 85, 255)
-    Disocrd.TextSize = 30.000
-    Disocrd.TextWrapped = true
-    
-    UICorner_5.Parent = Disocrd
-    
-    
-    local function gayblur()
-    	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/blurr"))()
-    	print"COOL BLURR LOADED"
-    end
-    
-    coroutine.wrap(gayblur)()
-    
-    local function OHWD_fake_script() -- fishaoniggacode.ChangeText
-    
-    	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/ChangeText"))()
-    	print"Loaded change text"
-    end
-    
-    coroutine.wrap(OHWD_fake_script)()
-    
-    local function music()
-        local fishbadassmusic = Instance.new("Sound")
-        fishbadassmusic.SoundId = "rbxassetid://1271288928"
-        fishbadassmusic.Playing = true
-        fishbadassmusic.Looped = true
-        fishbadassmusic.TimePosition = "9"
-        fishbadassmusic.Name = "BadassMusic"
-        fishbadassmusic.Parent = game.Workspace
-        fishbadassmusic.Volume = 0.1
-    end
-    
-    coroutine.wrap(music)()
-    
-    
-    CheckYourMfKEY.MouseButton1Click:Connect(function()
-    	if key.Text == tostring(game:HttpGet("https://pastebin.com/raw/XXM0dDgP")) then
-    		keyfindsystems:TweenPosition(UDim2.new(0.583,0,-1.9,0), "Out", "Quad", 1, true)
-    		print"we loaded the gui you wanted master"
-    		wait(.2)
-    		if game.Lighting:FindFirstChild("SuperWeed") then
-    		     game.Lighting.SuperWeed:Destroy()
-    		end
-    		game.Workspace.BadassMusic:Destroy()
-    		loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub",true))();
-    		wait(5)
-    		MainGui:Destroy()
-    	else
-    		key.Text = ""
-    		key.Text = "Incorrect, try again."
-    		wait(2)
-    		game:GetService("Players").LocalPlayer:Kick("Join discord to get key, link was copied to your clipboard!")
+-- Instances:
+
+local fishaoniggacode = Instance.new("ScreenGui")
+local keyfindsystems = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local BackGround = Instance.new("ImageLabel")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local CheckYourMfKEY = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local key = Instance.new("TextBox")
+local UICorner_4 = Instance.new("UICorner")
+local Disocrd = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Niggatext = Instance.new("TextLabel")
+
+--Properties:
+
+fishaoniggacode.Name = "fishaoniggacode"
+fishaoniggacode.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+fishaoniggacode.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+keyfindsystems.Name = "keyfindsystems"
+keyfindsystems.Parent = fishaoniggacode
+keyfindsystems.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+keyfindsystems.BackgroundTransparency = 1.000
+keyfindsystems.Position = UDim2.new(0.179519519, 0, 0.141176477, 0)
+keyfindsystems.Size = UDim2.new(0, 425, 0, 250)
+
+UICorner.Parent = keyfindsystems
+
+BackGround.Name = "BackGround"
+BackGround.Parent = keyfindsystems
+BackGround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BackGround.BackgroundTransparency = 1.000
+BackGround.Position = UDim2.new(-0.00154641538, 0, -0.0015823975, 0)
+BackGround.Size = UDim2.new(0, 425, 0, 250)
+BackGround.Image = "http://www.roblox.com/asset/?id=2741284587"
+BackGround.ImageColor3 = Color3.fromRGB(170, 0, 255)
+BackGround.ImageTransparency = 0.200
+
+UICorner_2.Parent = BackGround
+
+TextLabel.Parent = BackGround
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.Position = UDim2.new(0.122181758, 0, 0.0759999976, 0)
+TextLabel.Size = UDim2.new(0, 324, 0, 28)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "KeyCheckShit!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 48.000
+TextLabel.TextTransparency = 0.300
+TextLabel.TextWrapped = true
+
+CheckYourMfKEY.Name = "CheckYourMfKEY"
+CheckYourMfKEY.Parent = BackGround
+CheckYourMfKEY.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+CheckYourMfKEY.BackgroundTransparency = 0.300
+CheckYourMfKEY.Position = UDim2.new(0.207058817, 0, 0.663999975, 0)
+CheckYourMfKEY.Size = UDim2.new(0, 250, 0, 54)
+CheckYourMfKEY.Font = Enum.Font.SourceSans
+CheckYourMfKEY.Text = "Check Key!"
+CheckYourMfKEY.TextColor3 = Color3.fromRGB(170, 85, 255)
+CheckYourMfKEY.TextScaled = true
+CheckYourMfKEY.TextSize = 14.000
+CheckYourMfKEY.TextWrapped = true
+
+UICorner_3.Parent = CheckYourMfKEY
+
+key.Name = "key"
+key.Parent = BackGround
+key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+key.BackgroundTransparency = 0.300
+key.BorderSizePixel = 0
+key.Position = UDim2.new(0.122181788, 0, 0.392872751, 0)
+key.Size = UDim2.new(0, 326, 0, 24)
+key.Font = Enum.Font.Merriweather
+key.Text = ""
+key.TextColor3 = Color3.fromRGB(0, 85, 255)
+key.TextScaled = true
+key.TextSize = 14.000
+key.TextWrapped = true
+
+UICorner_4.Parent = key
+
+Disocrd.Name = "Disocrd"
+Disocrd.Parent = BackGround
+Disocrd.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Disocrd.BackgroundTransparency = 0.300
+Disocrd.BorderSizePixel = 0
+Disocrd.Position = UDim2.new(0.204705879, 0, 0.523999989, 0)
+Disocrd.Size = UDim2.new(0, 250, 0, 22)
+Disocrd.Font = Enum.Font.SourceSans
+Disocrd.Text = "CopyDiscordLink!"
+Disocrd.TextColor3 = Color3.fromRGB(170, 85, 255)
+Disocrd.TextSize = 30.000
+Disocrd.TextWrapped = true
+
+UICorner_5.Parent = Disocrd
+
+Niggatext.Name = "Nigga text"
+Niggatext.Parent = BackGround
+Niggatext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Niggatext.BackgroundTransparency = 1.000
+Niggatext.Position = UDim2.new(0.207058817, 0, 0.879999995, 0)
+Niggatext.Size = UDim2.new(0, 237, 0, 30)
+Niggatext.Font = Enum.Font.PermanentMarker
+Niggatext.Text = "LOL"
+Niggatext.TextColor3 = Color3.fromRGB(255, 255, 255)
+Niggatext.TextScaled = true
+Niggatext.TextSize = 14.000
+Niggatext.TextWrapped = true
+
+-- Scripts:
+
+local function GKJOXEH_fake_script() -- CheckYourMfKEY.LocalScript 
+	local script = Instance.new('LocalScript', CheckYourMfKEY)
+
+	if key.Text == tostring(game:HttpGet("https://pastebin.com/raw/XXM0dDgP")) then
+		keyfindsystems:TweenPosition(UDim2.new(0.583,0,-1.9,0), "Out", "Quad", 1, true)
+		print"we loaded the gui you wanted master"
+		wait(.2)
+		if game.Lighting:FindFirstChild("SuperWeed") then
+			game.Lighting.SuperWeed:Destroy()
+		end
+		game.Workspace.BadassMusic:Destroy()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub",true))();
+		wait(5)
+		fishaoniggacode:Destroy()
+	else
+		key.Text = ""
+		key.Text = "Incorrect, try again."
+		wait(2)
+		game:GetService("Players").LocalPlayer:Kick("Join discord to get key, link was copied to your clipboard!")
 		setclipboard("https://discord.gg/ja5g4ym7WB")
-    		wait(1)
-    		key.Text = ""
-    	end
-    end)    
-	Disocrd.MouseButton1Click:Connect(function()
+		wait(1)
+		key.Text = ""
+	end
+end
+coroutine.wrap(GKJOXEH_fake_script)()
+local function LAQPJK_fake_script() -- Disocrd.DiscordLink 
+	local script = Instance.new('LocalScript', Disocrd)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print"copyed"
 		setclipboard("https://discord.gg/ja5g4ym7WB")
 		toclipboard("https://discord.gg/ja5g4ym7WB")
-		print"Copied"
 	end)
-	
-    local function EZDNAOF_fake_script() -- keyfindsystems.Dragify 
-    	local script = Instance.new('LocalScript', keyfindsystems)
-    
-    	local UIS = game:GetService("UserInputService")
-    	function dragify(Frame)
-    	    dragToggle = nil
-    	    local dragSpeed = 0.50
-    	    dragInput = nil
-    	    dragStart = nil
-    	    local dragPos = nil
-    	    function updateInput(input)
-    	        local Delta = input.Position - dragStart
-    	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-    	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
-    	    end
-    	    Frame.InputBegan:Connect(function(input)
-    	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-    	            dragToggle = true
-    	            dragStart = input.Position
-    	            startPos = Frame.Position
-    	            input.Changed:Connect(function()
-    	                if input.UserInputState == Enum.UserInputState.End then
-    	                    dragToggle = false
-    	                end
-    	            end)
-    	        end
-    	    end)
-    	    Frame.InputChanged:Connect(function(input)
-    	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-    	            dragInput = input
-    	        end
-    	    end)
-    	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-    	        if input == dragInput and dragToggle then
-    	            updateInput(input)
-    	        end
-    	    end)
-    	end
-    	
-    	dragify(script.Parent)
-    end
-    coroutine.wrap(EZDNAOF_fake_script)()
-    
-        game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "KeySystem loaded successfully!"})
-        wait(2)
-        game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "If you dont know the key join the discord server key changes daily or when i feel like it"})
-        wait(2)
-        game:GetService("StarterGui"):SetCore("SendNotification", {Title = "KeySystem", Text = "Lol nigga code by fishaok#1151"})
-    	print"loaded text"
-    
-    
-    local function OHWDD_fake_script()
-    wait(0)
-    print"Okay can we Stop"
-    end
-    coroutine.wrap(OHWDD_fake_script)()
-    
-    local SuperWheat = Instance.new("BoolValue")
-    SuperWheat.Name = "ncca"
-    SuperWheat.Parent = game.Players.LocalPlayer
 end
+coroutine.wrap(LAQPJK_fake_script)()
+local function FTZE_fake_script() -- keyfindsystems.Dragify 
+	local script = Instance.new('LocalScript', keyfindsystems)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.50
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(FTZE_fake_script)()
+local function CMQSQ_fake_script() -- fishaoniggacode.Text 
+	local script = Instance.new('LocalScript', fishaoniggacode)
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/TextNotfi"))()
+	print"loaded text"
+end
+coroutine.wrap(CMQSQ_fake_script)()
+local function SCELWBT_fake_script() -- fishaoniggacode.CoolBlurr 
+	local script = Instance.new('LocalScript', fishaoniggacode)
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/blurr"))()
+	print"COOL BLURR LOADED"
+end
+coroutine.wrap(SCELWBT_fake_script)()
+local function VOHK_fake_script() -- fishaoniggacode.ChangeText 
+	local script = Instance.new('LocalScript', fishaoniggacode)
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/ChangeText"))()
+	print"Loaded change text"
+end
+coroutine.wrap(VOHK_fake_script)()
+local function XIXX_fake_script() -- fishaoniggacode.BadAssMusic 
+	local script = Instance.new('LocalScript', fishaoniggacode)
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/coolMusic"))()
+	print"LOADED MUSIC"
+end
+coroutine.wrap(XIXX_fake_script)()
+local function UNCZU_fake_script() -- fishaoniggacode.nolonger use 
+	local script = Instance.new('LocalScript', fishaoniggacode)
+
+	print"L O L J J S P L O IT "
+end
+coroutine.wrap(UNCZU_fake_script)()
+local function PDCZND_fake_script() -- fishaoniggacode.Later usde check 
+	local script = Instance.new('LocalScript', fishaoniggacode)
+
+	local SuperWheat = Instance.new("BoolValue")
+	SuperWheat.Name = "ncca"
+	SuperWheat.Parent = game.Players.LocalPlayer
+end
+coroutine.wrap(PDCZND_fake_script)()
+local function CSFWM_fake_script() -- fishaoniggacode.VersionCheck 
+	local script = Instance.new('LocalScript', fishaoniggacode)
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/Version"))()
+	print"VersionID Loaded"
+end
+coroutine.wrap(CSFWM_fake_script)()
+
