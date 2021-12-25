@@ -245,3 +245,4 @@ local function NVLJH_fake_script() -- fishaoniggacode.VersionCheck
 	print"VersionID Loaded"
 end
 coroutine.wrap(NVLJH_fake_script)()
+end
