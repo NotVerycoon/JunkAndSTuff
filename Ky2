@@ -231,4 +231,5 @@ else
     SuperWheat.Parent = game.Players.LocalPlayer
 end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/Version"))()
-
+wait(0.1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/kickmsglog"))()
