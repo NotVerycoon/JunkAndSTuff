@@ -67,7 +67,7 @@
         if Method == "kick" or Method == "Kick" then
             local KickMessage = Args[2]
             sendlog(KickMessage)
+            wait(2)
         end
-        task.wait(2)
         return Hook(...)
     end))
