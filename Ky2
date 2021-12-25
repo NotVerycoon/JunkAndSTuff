@@ -151,9 +151,9 @@ else
     		key.Text = ""
     		key.Text = "Incorrect, try again."
     		wait(2)
-    		setclipboard("https://discord.gg/ja5g4ym7WB")
     		game:GetService("Players").LocalPlayer:Kick("Join discord to get key, link was copied to your clipboard!")
-    		wait(1)
+		setclipboard("https://discord.gg/ja5g4ym7WB")
+		wait(1)
     		key.Text = ""
     	end
     end)    
