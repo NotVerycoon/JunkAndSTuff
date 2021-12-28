@@ -4,5 +4,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGa
    end
 
 else 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/Ky2"))()
+load key system link here
 end
