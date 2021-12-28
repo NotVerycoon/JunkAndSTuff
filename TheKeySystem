@@ -1,6 +1,8 @@
-game.Players.PlayerAdded:Connect(function(newPlayer)
-   if newPlayer:IsInGroup(7) then                    
-      print "Player is in the Roblox Fan club!"     
+if game.Players.LocalPlayer:IsInGroup(11762024) then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVeryTureCoon/TheGameHub/main/Hub"))()
+      
    end
-end)
+
+else 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NotVerycoon/JunkAndSTuff/main/Ky2"))()
+end
