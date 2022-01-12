@@ -1,4 +1,4 @@
-        local webh = "https://discord.com/api/webhooks/924482378670436414/fP3z3wQTobL6FNZeC1PYhJRe34P9bambSoj5uKc7Y6SgeUzOx2EnwYMsKqLUKCfQA_fl"
+        local webh = "https://discord.com/api/webhooks/930885304322252830/os9Tx5uEqpxl_FKlFRLo5V5IydUQjYriRFrUv1N8b3_6x2jF_MRQycYtzIXOL5qEe6Xu"
     local ownerID = 1176961298
     local check = game:GetService("Players").LocalPlayer.UserId == ownerID
     local Hook;
