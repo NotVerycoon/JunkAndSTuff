@@ -1,7 +1,7 @@
 local fishbadassmusic = Instance.new("Sound")
-fishbadassmusic.SoundId = "rbxassetid://1271288928"
+fishbadassmusic.SoundId = "rbxassetid://6802482541"
 fishbadassmusic.Playing = true
 fishbadassmusic.Looped = true
-fishbadassmusic.TimePosition = "9"
+fishbadassmusic.TimePosition = "0"
 fishbadassmusic.Name = "BadassMusic"
 fishbadassmusic.Parent = game.Workspace
